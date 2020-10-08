@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+.grid-container {
+    width: 1920px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 120px 580px 1262px 1004px 1080px 762px 151px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "home"
+    "about-me"
+    "process"
+    "projects"
+    "contacts"
+    "footer";
+}
+
+.header {
+    grid-area: header;
+    background-color: #EEEFF1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    width: 115px;
+    height: 72px;
+    padding-top: 46px;
+    padding-left: 392px;
+}
+
+.header__menu {
+    list-style: none;
+    width: 661px;
+    height: 16px;
+}
+
+.header__menu li {
+    display: inline-block;
+}
+
+.header__menu li a{
+    text-decoration: none;
+}
+
+.home {
+    grid-area: home;
+}
+
+.home__laptop {}
+
+.home__h1 {}
+
+.home__text {}
+
+.home__btn-write-me {}
+
+.about-me {
+    grid-area: about-me;
+}
+
+.about-me__h2 {}
+
+.about-me__text {}
+
+.about-me__numbers {}
+
+.about-me__skills {}
+
+.skills__h2 {}
+
+.skills__skills-list {}
+
+.skills-list__skill {}
+
+.skills-list__skill-level {}
+
+.about-me__photo {}
+
+.process {
+    grid-area: process;
+}
+
+.process__h2 {}
+
+.process__text {}
+
+.process__video {}
+
+.projects {
+    grid-area: projects;
+}
+
+.projects__projects-wrapper {}
+
+.projects-wrapper__project {}
+
+.projects__clients {}
+
+.contacts {
+    grid-area: contacts;
+}
+
+.contacts__h2 {}
+
+.contacts__text {}
+
+.contacts__form {}
+
+.footer {
+    grid-area: footer;
+}
+
+.footer__copyright {}
+
+.copyright__name {}
+
+.copyright__year {}
+
+.footer__social-networks {}
