@@ -109,26 +109,95 @@
 
 /* ОБО МНЕ */
 .about-me {
+    height: 1262px;
+
     grid-area: about-me;
+    display: grid;
+    grid-template-rows: 1fr 1fr 250px 653px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "about_h2 about_h2"
+    "about_text about_text"
+    "about_numbers about_numbers"
+    "about_skills about_photo";
 }
 
-.about-me__h2 {}
+.about-me__h2 {
+    grid-area: about_h2;
+    text-align: center;
+    padding-top: 112px;
+}
 
-.about-me__text {}
+.about-me__text {
+    grid-area: about_text;
+    text-align: center;
+    width: 540px;
+    padding: 0 690px 100px;
+}
 
-.about-me__numbers {}
+.about-me__numbers {
+    grid-area: about_numbers;
+    width: 100%;
+    background-color: #34547A;
+    display: flex;
+    justify-content: center;
+}
 
-.about-me__skills {}
+.about-me__numbers img{
+    margin-right: 50px;
+}
 
-.skills__h2 {}
+.about-me__skills {
+    grid-area: about_skills;
+    padding: 204px 0 192px 386px;
+}
 
-.skills__skills-list {}
+.skills__h2 {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
 
-.skills-list__skill {}
+.skills__skills-list {
+    margin: 0;
+    list-style: none;
+    padding-left: 0;
+}
+.skills__skills-list li {
+    padding-bottom: 20px;
+}
 
-.skills-list__skill-level {}
+.skills-list__skill {
+    width: 445px;
+    height: 4px;
+    margin-top: 20px;
+    background-color: #C4C4C4;
+    position: relative;
 
-.about-me__photo {}
+}
+
+.percent{
+    display: none;
+}
+
+.skills-list__skill-level {
+    background-color: #34547A;
+    position: absolute;
+    width: 50%;
+    height: inherit;
+}
+
+.about-me__photo {
+    grid-area: about_photo;
+    
+    width: 555px;
+    height: 450px;
+    padding: 102px 384px 101px 0;
+}
+
+.about-me__photo img {
+    width: inherit;
+    height: inherit;
+}
 
 /* КАК Я РАБОТАЮ */
 .process {
