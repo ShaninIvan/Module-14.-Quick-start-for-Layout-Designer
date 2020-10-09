@@ -7,7 +7,7 @@
     font-size: 16px;
     margin: 0 auto;
     display: grid;
-    grid-template-rows: 1fr 580px 1262px 1004px 1080px 762px 151px;
+    grid-template-rows: 1fr 580px 1262px 1004px 1280px 762px 151px;
     grid-template-columns: 1fr;
     grid-template-areas: 
     "header"
@@ -39,22 +39,25 @@ h2{
 .header__logo {
     width: 115px;
     height: 72px;
-    padding-top: 46px;
-    padding-left: 392px;
+    padding-top: 67px;
+    padding-left: 398px;
 }
 
 .header__menu {
     list-style: none;
     width: 661px;
     height: 16px;
-    padding-top: 68px;
-    padding-right: 413px;
+    padding-top: 72px;
+    padding-right: 363px;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
 }
 
 .header__menu li {
-    display: inline-block;   
+    display: inline-block;
+    letter-spacing: 1.7px;
+    margin-right: 42px;
+
 }
 
 .header__menu li a{
@@ -70,10 +73,10 @@ h2{
 .home {
     background-color: #EEEFF1;
     grid-area: home;
-    padding: 128px 405px 157px 487px;
+    padding: 100px 405px 157px 487px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 3fr;
     
 }
 
@@ -81,7 +84,7 @@ h2{
     grid-row: 1/3;
     grid-column: 1/1;
 
-    padding-top: 21px;
+    padding-top: 31px;
 
 }
 
@@ -89,6 +92,8 @@ h2{
     grid-row: 1/1;
     grid-column: 2;
     align-self: start;
+    margin-left: 76px;
+    margin-top: 12px;
 
     text-transform: none;
     font-family: Roboto;
@@ -102,6 +107,11 @@ h2{
     grid-row: 2/2;
     grid-column: 2;
     align-self: center;
+
+    line-height: 27px;
+    width: 530px;
+    margin-left: 77px;
+    margin-bottom: 15px;
 }
 
 .home__btn-write-me {
@@ -113,15 +123,21 @@ h2{
     height: 65px;
     background-color: #34547A;
     color: #ffffff;
+
+    margin-left: 77px;
+    margin-bottom: 14px;
+
+    letter-spacing: 1.7px;
+
+    cursor: pointer;
 }
 
 /* ОБО МНЕ */
 .about-me {
     height: 1262px;
-
     grid-area: about-me;
     display: grid;
-    grid-template-rows: 1fr 1fr 250px 653px;
+    grid-template-rows: 2fr 3fr 270px 653px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "about_h2 about_h2"
@@ -133,14 +149,18 @@ h2{
 .about-me__h2 {
     grid-area: about_h2;
     text-align: center;
-    padding-top: 112px;
+    padding-top: 94px;
+    padding-right: 1px;
 }
 
 .about-me__text {
     grid-area: about_text;
     text-align: center;
     width: 540px;
-    padding: 0 690px 100px;
+
+    padding: 33px 690px 0;
+
+    line-height: 27px;
 }
 
 .about-me__numbers {
@@ -148,16 +168,24 @@ h2{
     width: 100%;
     background-color: #34547A;
     display: flex;
-    justify-content: center;
+    justify-content: left;
+
+    margin-bottom: 20px;
 }
 
 .about-me__numbers img{
-    margin-right: 50px;
+    margin-top: 2px;
+    margin-left: 49px;
 }
+
+.about-me__numbers img:first-of-type{
+    margin-left: 406px;
+}
+
 
 .about-me__skills {
     grid-area: about_skills;
-    padding: 204px 0 192px 386px;
+    padding: 186px 0 192px 386px;
 }
 
 .skills__h2 {
@@ -166,18 +194,19 @@ h2{
 }
 
 .skills__skills-list {
-    margin: 0;
+    
+    margin-top: -8px;
     list-style: none;
     padding-left: 0;
 }
 .skills__skills-list li {
-    padding-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .skills-list__skill {
     width: 445px;
     height: 4px;
-    margin-top: 20px;
+    margin-top: 17px;
     background-color: #C4C4C4;
     position: relative;
 
@@ -200,7 +229,7 @@ h2{
     
     width: 555px;
     height: 450px;
-    padding: 102px 384px 101px 0;
+    padding: 82px 384px 121px 22px;
 }
 
 .about-me__photo img {
@@ -211,38 +240,78 @@ h2{
 /* КАК Я РАБОТАЮ */
 .process {
     grid-area: process;
-
     background-color: #EEEFF1;
-
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .process__h2 {
-    margin: 100px 0 50px;
+    margin: 82px 0 39px;
 }
 
 .process__text {
-    margin: 0 690px 57px;
+    margin: 0 690px 49px;
     text-align: center;
+    line-height: 27px;
 }
 
-.process__video {}
+.process__video {
+    width: 1110px;
+    height: 600px;
+}
 
 /* ПРОЕКТЫ И КЛИЕНТЫ */
 .projects {
     grid-area: projects;
+    
+    display: grid;
+    grid-template-rows: 10px 1fr 292px;
+    grid-template-columns: 1fr;
 }
 
-.projects__projects-wrapper {}
+.projects__projects-wrapper {
+    grid-row: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+}
 
-.projects-wrapper__project {}
+.projects-wrapper__project {
+    width: 480px;
+    height: 480px;
+}
 
-.projects__clients {}
+.projects-wrapper__project img {
+    width: inherit;
+    height: inherit;
+}
+
+.projects__clients {
+    grid-row: 3;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    padding-bottom: 62px;
+    padding-left: 374px;
+    
+}
+
+.projects__clients img {
+    width: 255px;
+    height: 120px;
+    margin-left: 30px;
+   
+}
 
 .contacts {
     grid-area: contacts;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+
+    background-color: #EEEFF1;
 }
 
 /* КОНТАКТЫ */
