@@ -60,7 +60,11 @@ h2{
     display: inline-block;
     letter-spacing: 1.7px;
     margin-right: 42px;
+    transition: 0.2s;
+}
 
+.header__menu li:hover{
+    transform: scale(1.2);
 }
 
 .header__menu li a{
@@ -70,7 +74,6 @@ h2{
 
 .header__menu li a:hover{
     color: #34547A;
-    box-shadow:
 }
 
 /* ГЛАВНАЯ */
