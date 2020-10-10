@@ -11,13 +11,6 @@ window.onload = () =>{
         const level = skill.querySelector('.about-me__skill-level');
         level.style.width = `${percent}%`;
     });
-
-    //Эта функция добавит проектам "маски", которые будут появляться при наведении
-    [...document.querySelectorAll('.projects__project')].forEach(project => {
-        const mask = document.createElement('div');
-        mask.className = 'projects__mask';
-        project.append(mask);
-    });
 };
 
 document.querySelector('.contacts__submit').addEventListener('click', (event)=>{
