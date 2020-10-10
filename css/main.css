@@ -297,7 +297,7 @@ h2{
 
 .projects__mask:hover{
     background: rgba(52, 84, 122, 0.8);
-    background-image: url(/img/view.svg);
+    background-image: url(./img/view.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     
