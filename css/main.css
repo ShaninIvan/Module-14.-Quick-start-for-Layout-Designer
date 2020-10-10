@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* Главный контейнер */
 .grid-container {
     width: 1920px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     margin: 0 auto;
-    scroll-behavior: smooth;
     display: grid;
     grid-template-rows: 120px 580px 1262px 1004px 1280px 762px 151px;
     grid-template-areas: 
@@ -67,6 +70,7 @@ h2{
 
 .header__menu li a:hover{
     color: #34547A;
+    box-shadow:
 }
 
 /* ГЛАВНАЯ */
