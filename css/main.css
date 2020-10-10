@@ -7,8 +7,7 @@
     font-size: 16px;
     margin: 0 auto;
     display: grid;
-    grid-template-rows: 1fr 580px 1262px 1004px 1280px 762px 151px;
-    grid-template-columns: 1fr;
+    grid-template-rows: 120px 580px 1262px 1004px 1280px 762px 151px;
     grid-template-areas: 
     "header"
     "home"
@@ -48,7 +47,7 @@ h2{
     width: 661px;
     height: 16px;
     padding-top: 72px;
-    padding-right: 363px;
+    padding-right: 365px;
     display: flex;
     justify-content: left;
 }
@@ -73,7 +72,7 @@ h2{
 .home {
     background-color: #EEEFF1;
     grid-area: home;
-    padding: 100px 405px 157px 487px;
+    padding: 126px 405px 157px 487px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 2fr 3fr;
@@ -84,7 +83,7 @@ h2{
     grid-row: 1/3;
     grid-column: 1/1;
 
-    padding-top: 31px;
+    padding-top: 26px;
 
 }
 
@@ -92,8 +91,8 @@ h2{
     grid-row: 1/1;
     grid-column: 2;
     align-self: start;
-    margin-left: 76px;
-    margin-top: 12px;
+    margin-left: 75px;
+    margin-top: 5px;
 
     text-transform: none;
     font-family: Roboto;
@@ -110,8 +109,8 @@ h2{
 
     line-height: 27px;
     width: 530px;
-    margin-left: 77px;
-    margin-bottom: 15px;
+    margin-left: 75px;
+    margin-bottom: 9px;
 }
 
 .home__btn-write-me {
@@ -124,8 +123,8 @@ h2{
     background-color: #34547A;
     color: #ffffff;
 
-    margin-left: 77px;
-    margin-bottom: 14px;
+    margin-left: 75px;
+    margin-bottom: -5px;
 
     letter-spacing: 1.7px;
 
@@ -137,7 +136,7 @@ h2{
     height: 1262px;
     grid-area: about-me;
     display: grid;
-    grid-template-rows: 2fr 3fr 270px 653px;
+    grid-template-rows: 142px 217px 250px 653px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "about_h2 about_h2"
@@ -149,8 +148,8 @@ h2{
 .about-me__h2 {
     grid-area: about_h2;
     text-align: center;
-    padding-top: 94px;
-    padding-right: 1px;
+    padding-top: 112px;
+    padding-right: 3px;
 }
 
 .about-me__text {
@@ -158,7 +157,7 @@ h2{
     text-align: center;
     width: 540px;
 
-    padding: 33px 690px 0;
+    padding: 45px 690px 0;
 
     line-height: 27px;
 }
@@ -170,7 +169,7 @@ h2{
     display: flex;
     justify-content: left;
 
-    margin-bottom: 20px;
+   
 }
 
 .about-me__numbers img{
@@ -185,25 +184,23 @@ h2{
 
 .about-me__skills {
     grid-area: about_skills;
-    padding: 186px 0 192px 386px;
+    padding: 204px 0 192px 386px;
 }
 
-.skills__h2 {
+.about-me__skills-h2 {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 43px;
 }
 
-.skills__skills-list {
-    
-    margin-top: -8px;
+.about-me__skills-list {
     list-style: none;
     padding-left: 0;
 }
-.skills__skills-list li {
-    margin-bottom: 30px;
+.about-me__skills-list li {
+    margin-bottom: 29.5px;
 }
 
-.skills-list__skill {
+.about-me__skill {
     width: 445px;
     height: 4px;
     margin-top: 17px;
@@ -212,11 +209,11 @@ h2{
 
 }
 
-.percent{
+.about-me__percent{
     display: none;
 }
 
-.skills-list__skill-level {
+.about-me__skill-level {
     background-color: #34547A;
     position: absolute;
     width: 0%;
@@ -229,7 +226,7 @@ h2{
     
     width: 555px;
     height: 450px;
-    padding: 82px 384px 121px 22px;
+    padding: 102px 384px 102px 20px;
 }
 
 .about-me__photo img {
@@ -247,7 +244,7 @@ h2{
 }
 
 .process__h2 {
-    margin: 82px 0 39px;
+    margin: 100px 758px 39px 757px;
 }
 
 .process__text {
@@ -266,7 +263,7 @@ h2{
     grid-area: projects;
     
     display: grid;
-    grid-template-rows: 10px 1fr 292px;
+    grid-template-rows: 28px 960px 292px;
     grid-template-columns: 1fr;
 }
 
@@ -277,14 +274,33 @@ h2{
     align-content: start;
 }
 
-.projects-wrapper__project {
+.projects__project {
     width: 480px;
     height: 480px;
+    position: relative;
 }
 
-.projects-wrapper__project img {
+.projects__project img {
     width: inherit;
     height: inherit;
+    position: absolute;
+}
+
+.projects__mask{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(52, 84, 122, 0.0);
+    transition: background-color 0.3s;
+}
+
+.projects__mask:hover{
+    background: rgba(52, 84, 122, 0.8);
+    background-image: url(/img/view.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    
 }
 
 .projects__clients {
@@ -293,7 +309,7 @@ h2{
     justify-content: left;
     align-items: center;
 
-    padding-bottom: 62px;
+    padding-bottom: 30px;
     padding-left: 374px;
     
 }
@@ -308,28 +324,109 @@ h2{
 .contacts {
     grid-area: contacts;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-
+    grid-template-rows: 130px 117px 1fr;
+    grid-template-columns: 1fr;
+    text-align: center;
     background-color: #EEEFF1;
 }
 
 /* КОНТАКТЫ */
-.contacts__h2 {}
+.contacts__h2 {
+    margin-top: 100px;  
+    margin-right: 6px;
+}
 
-.contacts__text {}
+.contacts__text {
+    margin: 48px 690px 65px;
+    line-height: 25px;
+}
 
-.contacts__form {}
+.contacts__form {
+    margin: 65px 690px 100px;
+    display: grid;
+    grid-template-rows: 70px 225px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "name mail"
+    "message message"
+    "submit submit";
+    grid-column-gap: 30px;
+    font-size: 14px;
+    color:  #5F5D5D;
+    
+}
+
+.contacts__form #contacts-name{
+    grid-area: name;
+    width: 235px;
+    height: 50px;
+    border: none;
+    padding-left: 20px;
+}
+
+.contacts__form #contacts-mail{
+    grid-area: mail;
+    width: 235px;
+    height: 50px;
+    border: none;
+    padding-left: 18px;
+}
+
+.contacts__form #contacts-message{
+    grid-area: message;
+    width: 500px;
+    height: 145px;
+    border: none;
+
+    padding: 17px 20px;
+}
+
+.contacts__submit{
+    grid-area: submit;
+
+    width: 190px;
+    height: 55px;
+    margin-left: 175px;
+
+    background-color: #34547A;
+    color: #ffffff;
+
+    letter-spacing: 1.7px;
+
+    cursor: pointer;
+}
 
 /* ПОДВАЛ */
 .footer {
     grid-area: footer;
+    background-color: #34547A;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.footer__copyright {}
+.footer__copyright {
+    line-height: 36px;
+    margin-left: 33px;
+    margin-top: 7px;
+}
 
-.copyright__name {}
+.footer__copyright-name {
+    font-size: 21px;
+    font-weight: 500;
+    
+}
 
-.copyright__year {}
+.footer__copyright-year {
+    font-size: 13px;
+}
 
-.footer__social-networks {}
+.footer__social-networks {
+    padding-right: 18px;
+    padding-top: 3px;
+}
+
+.footer__social-networks img {
+    margin-left: 18px;
+}

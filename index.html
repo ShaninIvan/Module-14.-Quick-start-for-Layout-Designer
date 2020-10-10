@@ -54,28 +54,28 @@
                 <img src="/img/40projects.svg" alt="40projects">
             </div>
             <div class="about-me__skills">
-                <h2 class="skills__h2">Мои навыки</h2>
+                <h2 class="about-me__skills-h2">Мои навыки</h2>
                 <!-- Элементы ниже являются динамическими. В span.percent нужно задать целое число от 0 до 100 -->
-                <ul class="skills__skills-list">
+                <ul class="about-me__skills-list">
                     <li>
                         Adobe Photoshop
-                        <div class="skills-list__skill">
-                            <span class="percent">10</span>
-                            <div class="skills-list__skill-level"></div>
+                        <div class="about-me__skill">
+                            <span class="about-me__percent">10</span>
+                            <div class="about-me__skill-level"></div>
                         </div>
                     </li>
                     <li>
                         Adobe Photoshop
-                        <div class="skills-list__skill">
-                            <span class="percent">50</span>
-                            <div class="skills-list__skill-level"></div>
+                        <div class="about-me__skill">
+                            <span class="about-me__percent">50</span>
+                            <div class="about-me__skill-level"></div>
                         </div>
                     </li>
                     <li>
                         Adobe Photoshop
-                        <div class="skills-list__skill">
-                            <span class="percent">75</span>
-                            <div class="skills-list__skill-level"></div>
+                        <div class="about-me__skill">
+                            <span class="about-me__percent">75</span>
+                            <div class="about-me__skill-level"></div>
                         </div>
                     </li>
                 </ul>
@@ -101,28 +101,28 @@
         <!-- Проекты -->
         <div class="projects" name="projects">
             <div class="projects__projects-wrapper">
-                <a href="#"><div class="projects-wrapper__project">
+                <a href="#"><div class="projects__project">
                     <img src="/img/jpg/projects1.jpg" alt="project">
                 </div></a>
-                <a href="#"> <div class="projects-wrapper__project">
+                <a href="#"> <div class="projects__project">
                     <img src="/img/jpg/projects2.jpg" alt="project">
                 </div></a>
-                <a href="#"></a><div class="projects-wrapper__project">
+                <a href="#"><div class="projects__project">
                     <img src="/img/jpg/projects1.jpg" alt="project">
                 </div></a>
-                <a href="#"></a><div class="projects-wrapper__project">
+                <a href="#"><div class="projects__project">
                     <img src="/img/jpg/projects2.jpg" alt="project">
                 </div></a>
-                <a href="#"><div class="projects-wrapper__project">
+                <a href="#"><div class="projects__project">
                     <img src="/img/jpg/projects2.jpg" alt="project">
                 </div></a>
-                <a href="#"></a><div class="projects-wrapper__project">
+                <a href="#"><div class="projects__project">
                     <img src="/img/jpg/projects1.jpg" alt="project">
                 </div></a>
-                <a href="#"></a><div class="projects-wrapper__project">
+                <a href="#"><div class="projects__project">
                     <img src="/img/jpg/projects2.jpg" alt="project">
                 </div></a>
-                <a href="#"></a><div class="projects-wrapper__project">
+                <a href="#"><div class="projects__project">
                     <img src="/img/jpg/projects1.jpg" alt="project">
                 </div></a>
             </div>
@@ -138,28 +138,26 @@
         <div class="contacts" name="contacts">
             <h2 class="contacts__h2">Хотите веб-сайт?</h2>
             <p class="contacts__text">
-                Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
+                Lorem Ipsum - это текст-"рыба", часто используемый в печати и<br> вэб-дизайне. Lorem Ipsum является
                 стандартной "рыбой"
                 для текстов на латинице с начала XVI века.
             </p>
             <form action="#" class="contacts__form">
-                <input type="text" name="" id="" placeholder="Ваше имя">
-                <input type="text" name="" id="" placeholder="Ваш e-mail">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Сообщение">
-
-                    </textarea>
-                <input type="submit" value="ОТПРАВИТЬ">
+                <input type="text" name="name" id="contacts-name" placeholder="Ваше имя">
+                <input type="email" name="mail" id="contacts-mail" placeholder="Ваш e-mail">
+                <textarea name="message" id="contacts-message" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                <input type="submit" class="contacts__submit" value="ОТПРАВИТЬ">
             </form>
         </div>
         <footer class="footer">
             <div class="footer__copyright">
-                <h3 class="copyright__name">Иванов Иван</h3>
-                <p class="copyright__year">(с) 2018. Все права защищены.</p>
+                <h3 class="footer__copyright-name">Иванов Иван</h3>
+                <p class="footer__copyright-year">(с) 2018. Все права защищены.</p>
             </div>
             <div class="footer__social-networks">
-                <a href="#"><img src="/img/VK.svg" alt="social network"></a>
-                <a href="#"><img src="/img/VK.svg" alt="social network"></a>
-                <a href="#"><img src="/img/VK.svg" alt="social network"></a>
+                <a href="#"><img src="/img/VK.svg" alt="VK"></a>
+                <a href="#"><img src="/img/VK.svg" alt="VK"></a>
+                <a href="#"><img src="/img/VK.svg" alt="VK"></a>
             </div>
         </footer>
     </div>
