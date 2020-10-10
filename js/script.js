@@ -1,6 +1,30 @@
 
 window.onload = () =>{
-    // Эта функция при загрузке страницы будет проверять список скиллов и менять прогресс из значения в span.percent
+    smoothAnchors();
+    dynamicSkills();
+};
+
+
+// Эта функция реализует плавную прокрутку к якорям на странице
+const smoothAnchors = () =>{
+    //собрать все якори
+    const anchors = document.querySelectorAll('a[href*="#"]');
+
+    anchors.forEach(anchor =>{
+        anchor.addEventListener('click', (event)=>{
+            event.preventDefault();
+            const targetID = anchor.getAttribute('href');
+            document.querySelector(''+targetID).scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        });
+    });
+};
+
+// Эта функция при загрузке страницы будет проверять список скиллов и менять прогресс из значения в span.percent
+const dynamicSkills = () =>{
+    
     [...document.querySelectorAll('.about-me__skill')].forEach(skill =>{
         let percent = skill.querySelector('.about-me__percent').innerText;
         
