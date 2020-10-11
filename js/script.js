@@ -40,3 +40,19 @@ const dynamicSkills = () =>{
 document.querySelector('.contacts__submit').addEventListener('click', (event)=>{
     event.preventDefault();
 });
+
+
+const hamburger = document.querySelector('.header__hamburger');
+const menu = document.querySelector('.header__menu');
+
+hamburger.addEventListener('click', ()=>{
+    
+    hamburger.classList.toggle('change');
+    if (hamburger.classList.contains('change')){
+        menu.style.height = '210px';
+    }else{
+        menu.style.height = '0';
+        
+    };
+
+})
