@@ -114,16 +114,21 @@ p[class*="__text"]{
     height: 40px;
     width: 100%;
     border-bottom: 2px solid rgb(133, 131, 131);
-    box-shadow: 0 0 20px  rgb(133, 131, 131) ;
+    box-shadow: 0 0 10px  rgb(133, 131, 131) inset ;
     letter-spacing: 1.7px;
     margin-right: 42px;
     padding-top: 10px;
-    user-select: none;
+    transition: 0.2s;
+}
+
+.header__menu li:active{
+    box-shadow: 0 0 20px rgb(133, 131, 200) inset ;
 }
 
 .header__menu li a {
     text-decoration: none;
     color: #000;
+    user-select: none;
 }
 
 .home {
