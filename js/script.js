@@ -20,7 +20,7 @@ const smoothAnchors = () =>{
         const href = anchor.getAttribute('href');
         let offset = $(href).offset().top;
 
-        offset = (window.innerWidth<=426) ? offset-60 : offset;
+        offset = (window.innerWidth<426) ? offset-60 : offset;
 
         item.addEventListener('click', ()=>{
             $('html').animate({scrollTop: offset}, 700);
