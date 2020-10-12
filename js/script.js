@@ -7,19 +7,26 @@ window.onload = () =>{
 
 // Эта функция реализует плавную прокрутку к якорям на странице
 const smoothAnchors = () =>{
-    //собрать все якори
-    const anchors = document.querySelectorAll('a[href*="#"]');
+    
+    const items = $('.header__menu li');
 
-    anchors.forEach(anchor =>{
+    [...items].forEach(item =>{
+        const anchor = item.querySelector('a[href*="#"]');
+        
         anchor.addEventListener('click', (event)=>{
             event.preventDefault();
-            const targetID = anchor.getAttribute('href');
-            document.querySelector(''+targetID).scrollIntoView({
-                behavior: "smooth",
-                block: "start"
-            });
         });
-    });
+
+        const href = anchor.getAttribute('href');
+        let offset = $(href).offset().top;
+
+        offset = (window.innerWidth<=426) ? offset-60 : offset;
+
+        item.addEventListener('click', ()=>{
+            $('html').animate({scrollTop: offset}, 700);
+        });
+        
+    });    
 };
 
 // Эта функция при загрузке страницы будет проверять список скиллов и менять прогресс из значения в span.percent

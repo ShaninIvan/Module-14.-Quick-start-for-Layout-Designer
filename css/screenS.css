@@ -13,9 +13,21 @@ h1, h2, h3, p {
     margin: 0;
 }
 
+h1{
+    font-size: 6.75vw;
+    margin-top: 30px;
+}
+
 h2 {
-    font-size: 32px;
+    font-size: 4.5vw;
     font-weight: 500;
+    margin-top: 20px;
+}
+
+p[class*="__text"]{
+    line-height: 4.5vw;
+    margin: 20px 20px 0;
+    text-align: center;
 }
 
 .container div {
@@ -37,14 +49,21 @@ h2 {
 }
 
 .header__logo {
-    padding-top: 5px;
+    padding-top: 20px;
     padding-left: 30px;
+    width: 50px;
+    height: 22px;
+}
+
+.header__logo img{
+    weight: inherit;
+    height: inherit;
 }
 
 .header__hamburger {
     width: 60px;
     margin-right: 10px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 /* Вся эта куча кода ради красивого крестика! */
@@ -80,6 +99,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    border-top: 2px solid rgb(133, 131, 131);
     position: absolute;
     overflow: hidden;
     top: 101%;
@@ -93,20 +113,17 @@ h2 {
     background-color: #ffffff;
     height: 40px;
     width: 100%;
-    border: 1px solid rgb(133, 131, 131);
+    border-bottom: 2px solid rgb(133, 131, 131);
+    box-shadow: 0 0 20px  rgb(133, 131, 131) ;
     letter-spacing: 1.7px;
     margin-right: 42px;
     padding-top: 10px;
-    transition: 0.2s;
+    user-select: none;
 }
 
 .header__menu li a {
     text-decoration: none;
     color: #000;
-}
-
-.header__menu li a:hover {
-    color: #34547A;
 }
 
 .home {
@@ -129,16 +146,6 @@ h2 {
     height: inherit;
 }
 
-.home__h1 {
-    margin-top: 30px;
-    text-align: center;
-}
-
-.home__text {
-    margin: 30px 20px 0;
-    text-align: center;
-    line-height: 27px;
-}
 
 .home__btn-write-me {
     width: 225px;
@@ -146,7 +153,7 @@ h2 {
     background-color: #34547A;
     color: #ffffff;
     letter-spacing: 1.7px;
-    margin: 50px auto 20px;
+    margin: 30px auto 20px;
     cursor: pointer;
 }
 
@@ -159,14 +166,10 @@ h2 {
 
 .about-me__h2 {
     order: 1;
-    margin-top: 30px;
 }
 
 .about-me__text {
     order: 2;
-    margin: 30px 20px 0;
-    text-align: center;
-    line-height: 27px;
 }
 
 .about-me__numbers {
@@ -254,16 +257,6 @@ h2 {
     align-items: center;
 }
 
-.process__h2 {
-    margin-top: 30px;
-}
-
-.process__text {
-    margin: 30px 20px 0;
-    text-align: center;
-    line-height: 27px;
-}
-
 .process__video {
     width: 90%;
     height: 230px;
@@ -332,16 +325,6 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.contacts__h2 {
-    margin-top: 20px;
-}
-
-.contacts__text {
-    margin: 30px 20px 0;
-    text-align: center;
-    line-height: 27px;
 }
 
 .contacts__form {
