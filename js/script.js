@@ -17,7 +17,7 @@ const smoothAnchors = () =>{
             event.preventDefault();
         });
 
-        const href = anchor.getAttribute('href');
+        const href = $(anchor).attr('href');
         let offset = $(href).offset().top;
 
         offset = (window.innerWidth<426) ? offset-60 : offset;
@@ -48,7 +48,7 @@ document.querySelector('.contacts__submit').addEventListener('click', (event)=>{
     event.preventDefault();
 });
 
-
+//Анимация кнопки-гамбургера и появление меню
 const hamburger = document.querySelector('.header__hamburger');
 const menu = document.querySelector('.header__menu');
 

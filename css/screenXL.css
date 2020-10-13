@@ -103,7 +103,6 @@ h2{
     margin-top: 5px;
 
     text-transform: none;
-    font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 48px;
@@ -332,6 +331,7 @@ h2{
    
 }
 
+/* КОНТАКТЫ */
 .contacts {
     grid-area: contacts;
     display: grid;
@@ -341,7 +341,7 @@ h2{
     background-color: #EEEFF1;
 }
 
-/* КОНТАКТЫ */
+
 .contacts__h2 {
     margin-top: 100px;  
     margin-right: 6px;
