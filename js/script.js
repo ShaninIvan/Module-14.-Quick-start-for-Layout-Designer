@@ -18,10 +18,10 @@ const smoothAnchors = () =>{
         });
 
         const href = $(anchor).attr('href');
-        let offset = $(href).offset().top;
+        const headerHeight = parseInt($('.header').css('height'));
+        const offset = $(href).offset().top-headerHeight;
 
-        offset = (window.innerWidth<426) ? offset-60 : offset;
-
+        
         item.addEventListener('click', ()=>{
             $('html').animate({scrollTop: offset}, 700);
         });
