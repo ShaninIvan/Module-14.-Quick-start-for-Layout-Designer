@@ -39,7 +39,6 @@ p[class*="__text"]{
     align-items: center;
     position: sticky;
     top: 0;
-    position: -webkit-sticky;
     height: 70px;
 }
 
