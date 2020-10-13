@@ -88,6 +88,8 @@ p[class*="__text"]{
     align-self: end;
     justify-self: end;
     width: 70%;
+    margin-top: 50px;
+    margin-left: 70px;
 }
 
 .home__laptop img {
